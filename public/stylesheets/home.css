@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "pencil";
+    src: url("/fonts/PPETRIAL.otf");
+}
+
+
+body {
+    background-image: url("/images/wood_desk.jpg");
+    font-family: "pencil", sans-serif;
+    margin: 0;
+}
+
+#header-wrapper {
+    background-image: url("/images/notebook_tape.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 800px;
+    margin: 0 auto;
+    height: 500px;
+}
+
+#header {
+    padding-top: 85px;
+    padding-left: 110px;
+}
+
+#header h1 {
+    margin-left: 110px;
+    margin-bottom: 20px;
+    color: blue;
+    font-size: 45pt;
+}
+
+#header p {
+    margin-left: 110px;
+    margin-bottom: 60px;
+    margin-top: 0;
+    color: red;
+    font-size: 20pt;
+    float: left;
+}
+
+#sticky {
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    margin-top: -45px;
+    margin-left: 350px;
+    background-image: url("/images/stickynote.png");
+}
+
+#sticky #icon1 {
+    margin-left: 40px;
+    margin-top: 5px;
+    float: left;
+}
+
+#sticky #icon2 {
+    margin-left: 110px;
+    margin-top: 50px;
+}
+
+#sticky #icon3 {
+    float: left;
+    margin-left: 40px;
+}
+
+#sticky #icon4 {
+    margin-left: 10px;
+    margin-top: -5px;
+}
+
+#navbar {
+    clear: left;
+    margin-top: 0;
+}
+
+#navbar li {
+    float: left;
+    margin-right: 46px;
+    list-style-type: none;
+    font-size: 26pt;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+#aboutItem {
+    margin-top: -30px;
+}
+
+#projectsItem {
+    margin-top: -25px;
+}
+
+#contactItem {
+    margin-top: -15px;
+}
+
+#blogItem {
+    margin-top: -10px;
+}
+
+#content-wrapper {
+    background-image: url("/images/notebook.png");
+    background-size: 900px;
+    width: 900px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -130px;
+}
+
+#content-left {
+    float: left;
+    height: 650px;
+    width: 350px;
+    padding-top: 100px;
+    margin-left: 30px;
+    padding-left: 30px;
+}
+
+#content-left h1 {
+    color: green;
+}
+
+#tweets {
+    margin-top: 80px;
+}
+
+#content-right {
+    margin-left: 500px;
+    padding-top: 150px;
+    width: 370px;
+    height: 650px;
+}
+
+#content-right img {
+    margin-bottom: 30px;
+}

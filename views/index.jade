@@ -1,0 +1,45 @@
+doctype html
+
+html
+  head
+    title My Portfolio - Home 
+    link(rel='stylesheet', href='/stylesheets/home.css')
+
+  body
+    #header-wrapper
+        #header
+            h1 Hi, I'm Evan Cook.
+            p 
+                | I like art, computers 
+                br
+                | and making things
+
+            #sticky
+                img#icon1(src="/images/linkedin_icon.png")
+                img#icon2(src="/images/github_icon.png")
+                img#icon3(src="/images/facebook_icon.png")
+                img#icon4(src="/images/mail_icon.png")
+
+            ul#navbar
+                li#aboutItem: a(id="about" href="/about") About Me
+                li#projectsItem: a(id="projects" href="/projects") Projects
+                li#contactItem: a(id="contact" href="/contact") Contact
+                li#blogItem: a(id="blog" href="/blog") Blog
+
+    #content-wrapper
+        #content-left
+            h1 Latest Blog Entry
+            h2= latest.headline
+            p= latest.blurb
+            a(href="./blog/viewentry?id=" + latest._id) View Post
+
+            h1#tweets Latest Tweets
+            each tweet in tweets
+                p!= tweet.text
+                
+        #content-right
+            img(src="/images/headshot.png")
+            iframe(width="100%", height="200", scrolling="no", frameborder="no", src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/188274232&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true")
+
+    script(src="/javascripts/jquery-1.10.2.min.js")
+    script(src="/javascripts/home.js")

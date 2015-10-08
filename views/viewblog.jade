@@ -1,0 +1,21 @@
+extends content-layout
+
+block append styles
+    link(rel="stylesheet", href="/stylesheets/notebook.css")
+
+block content-left
+    h1#headline= entry.headline
+    p#date= entry.date.month + "/" + entry.date.day + "/" + entry.date.year
+    p#post!= entry.post
+    p#tags
+        each tag in entry.tags
+            span= tag 
+    p#comments Comments:
+
+block content-right
+    h1 Links
+    ul
+        li: a(href="/blog") Blog Home
+        li: a(href="#", class=entry.tags) View Similar Entries
+        li: a(href="#", id=entry._id, class="delete") Delete
+

@@ -1,0 +1,32 @@
+doctype html
+
+head
+    title= title
+
+    block styles
+        link(rel="stylesheet", href="/stylesheets/content.css")
+
+body
+    block header
+        #header-wrapper
+            ul#navbar
+                li#homeItem: a(id="home" href="/") Home
+                li#aboutItem: a(id="about" href="/about") About Me
+                li#projectsItem: a(id="projects" href="/projects") Projects
+                li#contactItem: a(id="contact" href="/contact") Contact
+                li#blogItem: a(id="blog" href="/blog") Blog
+
+    block content
+        #content-wrapper
+            #content-left
+                block content-left
+            #content-right
+                block content-right
+
+    block overlay
+
+    input(type="hidden", value=activeId, id="activeId")
+
+    block scripts
+        script(src="/javascripts/jquery-1.10.2.min.js")    
+        script(src="/javascripts/content.js")

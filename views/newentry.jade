@@ -1,0 +1,19 @@
+
+head
+    title= title
+
+body
+    
+    h1= title
+
+    form#newPostForm(name="newpost", method="post", action="addentry")
+        p Headline 
+        input(type="text", placeholder="Headline", name="headline")
+        br
+        p Post:
+        textarea(name="post" cols="70", rows="20")
+        br
+        p Tags (seperate w/ space):
+        input(type="text", placeholder="Tags", name="tags")
+        br
+        button(type="submit") Submit

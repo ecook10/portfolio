@@ -1,0 +1,54 @@
+extends content-layout
+
+block append styles
+    link(rel="stylesheet", href="/stylesheets/notebook.css")
+    link(rel="stylesheet", href="/stylesheets/blog.css")
+
+block content-left
+    each entry, i in blogList
+        .blogEntry
+            h2= entry.headline
+            p= entry.blurb
+            a(href="./blog/viewentry?id=" + entry._id) View Post
+         
+
+block content-right
+    h1 Archive
+    ul
+        li March 2015
+        li April 2015
+
+    h1 Categories
+    ul
+        li Web Development
+        li Music
+        li Random Musings
+        li Literature
+
+    h3: a(href="#", id="showAddForm") New Post
+
+
+block overlay
+    #overlay-bg.overlay(style="display: none")
+    #addForm.overlay(style="display: none")
+        form#newPost(name="newpost", method="post", action="addentry")
+            span Headline: 
+            input(type="text", name="headline")
+            textarea#editor(name="post")
+            span Blurb:
+            br
+            textarea#blurb(name="blurb", rows="5")
+            br
+            span Tags: 
+            input(type="text", name="tags")
+            div#buttons
+                button#submit(type="submit") Submit
+                button#cancel(type="cancel") Cancel
+
+
+block append scripts
+    script(type="text/javascript" src="/javascripts/blog.js")
+    script(type="text/javascript" src="/javascripts/tinymce/tinymce.min.js")
+    script(type="text/javascript" src="/javascripts/tinymce/setup.js")
+
+

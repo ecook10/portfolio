@@ -1,0 +1,23 @@
+extends content-layout
+
+block append styles
+    link(rel="stylesheet", href="/stylesheets/notebook.css")
+
+block content-left
+    h2#groovecon GrooveCon
+    p Add pretty screenshots and code samples and links to GitHub and other super engaging material that makes me look super smart
+
+    h2#portfolio My Portfolio
+    p Add pretty screenshots and code samples and links to GitHub and other super engaging material that makes me look super smart
+
+    h2#fractals Fractals
+    p Add pretty screenshots and code samples and links to GitHub and other super engaging material that makes me look super smart
+
+
+block content-right
+    ul#links
+        li: a(href="#").groovecon.active Headings
+        li: a(href="#").portfolio About 
+        li: a(href="#").fractals Me 
+
+

@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "pencil";
+    src: url("/fonts/PPETRIAL.otf");
+}
+
+body {
+    background-image: url("/images/wood_desk.jpg");
+    font-family: "pencil", sans-serif;
+    margin: 0;
+}
+
+#header-wrapper {
+    background-image: url("/images/torn_paper.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#navbar li {
+    float: left;
+    margin-left: 46px;
+    list-style-type: none;
+    font-size: 24pt;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+#homeItem {
+    margin-top: 120px;
+}
+
+#aboutItem {
+    margin-top: 100px;
+}
+
+#projectsItem {
+    margin-top: 140px;
+}
+
+#contactItem {
+    margin-top: 80px;
+}
+
+#blogItem {
+    margin-top: 95px;
+    margin-left: 55px !important;
+}
