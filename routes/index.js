@@ -29,13 +29,6 @@ router.get('/', function(req, res) {
         json: true
     };
 
-    res.render('index', {
-        title: 'home',
-        activeid: 'home',
-        latest: [],
-        tweets: []
-    });
-    /*
     request.post(key_options, function(key_error, key_response, key_body) {
 
         if (!key_error && key_response.statusCode == 200) {
@@ -64,6 +57,7 @@ router.get('/', function(req, res) {
                     console.log(twit_data[i].text);
                 }
 
+                /*
                 //get latest blog entry
                 Entry.findOne(function(err, blog_data) {
 
@@ -73,6 +67,14 @@ router.get('/', function(req, res) {
                         latest: blog_data,
                         tweets: twit_data
                     });
+                });
+                */
+
+                res.render('index', {
+                    title: 'home',
+                    activeid: 'home',
+                    latest: {},
+                    tweets: twit_data
                 });
             });
         }
