@@ -15,6 +15,7 @@ var App = function() {
     var self = this;
     self.app = express();
 
+    /*
 
     // Setup app variables
     
@@ -52,9 +53,13 @@ var App = function() {
     self.app.use(cookieParser());
     self.app.use(express.static(path.join(__dirname, 'public')));
 
+    */
 
 
     // Logic to open a database connection. We are going to call this outside of app so it is available to all our functions inside.
+
+
+    /*
 
     self.connectDb = function(callback){
     
@@ -140,6 +145,8 @@ var App = function() {
             error: {}
         });
     });
+
+    */
 
 };
 
