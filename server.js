@@ -66,7 +66,7 @@ var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 mongoose_connection_string = 'mongodb://127.0.0.1:27017/blogentries';
 //take advantage of openshift env vars when available:
 if(process.env.OPENSHIFT_MONGODB_DB_URL){
-  mongoose_connection_string = process.env.OPENSHIFT_MONGODB_DB_URL + 'blogentries';
+  mongoose_connection_string = process.env.OPENSHIFT_MONGODB_DB_URL + 'portfolio';
 }
 
 try {
