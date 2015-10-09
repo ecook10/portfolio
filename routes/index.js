@@ -79,7 +79,6 @@ router.get('/', function(req, res) {
             });
         }
     });
-    */
 });
 
 /* GET about page. */
