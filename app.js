@@ -83,6 +83,7 @@ var App = function() {
         self.db.on('disconnected', connect);
     };
 
+    */
 
     //starting the nodejs server with express
 
@@ -146,12 +147,12 @@ var App = function() {
         });
     });
 
-    */
 
 };
 
 // new express app
 var app = new App();
+app.startServer;
 
 //call the connectDb function and pass in the start server command
 //app.connectDb(app.startServer);
