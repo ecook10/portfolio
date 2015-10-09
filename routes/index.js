@@ -59,6 +59,8 @@ router.get('/', function(req, res) {
 
                 //get latest blog entry
                 Entry.findOne(function(err, blog_data) {
+                    console.log('BLOG_DATA:');
+                    console.log(blog_data);
 
                     res.render('index', {
                         title: 'home',
