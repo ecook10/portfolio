@@ -69,13 +69,11 @@ if(process.env.OPENSHIFT_MONGODB_DB_URL){
   mongoose_connection_string = process.env.OPENSHIFT_MONGODB_DB_URL + 'blogentries';
 }
 
-/*
 try {
     mongoose.connect(mongoose_connection_string);
 } catch(e) {
     console.log("Error connecting to database");
 }
-*/
 
  
 app.listen(server_port, server_ip_address, function () {

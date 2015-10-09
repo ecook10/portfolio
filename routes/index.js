@@ -57,7 +57,6 @@ router.get('/', function(req, res) {
                     console.log(twit_data[i].text);
                 }
 
-                /*
                 //get latest blog entry
                 Entry.findOne(function(err, blog_data) {
 
@@ -68,14 +67,15 @@ router.get('/', function(req, res) {
                         tweets: twit_data
                     });
                 });
-                */
 
+                /*
                 res.render('index', {
                     title: 'home',
                     activeid: 'home',
                     latest: {},
                     tweets: twit_data
                 });
+                */
             });
         }
     });
