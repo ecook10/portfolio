@@ -5,6 +5,9 @@ block append styles
     link(rel="stylesheet", href="/stylesheets/blog.css")
 
 block content-left
+    /For test deployment
+    h1 Blog Entries Here...
+
     each entry, i in blogList
         .blogEntry
             h2= entry.headline
@@ -25,7 +28,7 @@ block content-right
         li Random Musings
         li Literature
 
-    h3: a(href="#", id="showAddForm") New Post
+    /h3: a(href="#", id="showAddForm") New Post
 
 
 block overlay
@@ -42,7 +45,7 @@ block overlay
             span Tags: 
             input(type="text", name="tags")
             div#buttons
-                button#submit(type="submit") Submit
+                /button#submit(type="submit") Submit
                 button#cancel(type="cancel") Cancel
 
 

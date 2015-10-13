@@ -63,19 +63,11 @@ router.get('/', function(req, res) {
                     res.render('index', {
                         title: 'home',
                         activeid: 'home',
-                        latest: {},
+                        latest: blog_data,
                         tweets: twit_data
                     });
                 });
 
-                /*
-                res.render('index', {
-                    title: 'home',
-                    activeid: 'home',
-                    latest: {},
-                    tweets: twit_data
-                });
-                */
             });
         }
     });
